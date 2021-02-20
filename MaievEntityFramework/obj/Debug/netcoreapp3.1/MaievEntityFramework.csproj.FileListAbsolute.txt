@@ -1,0 +1,12 @@
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\bin\Debug\netcoreapp3.1\MaievEntityFramework.deps.json
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\bin\Debug\netcoreapp3.1\MaievEntityFramework.dll
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\bin\Debug\netcoreapp3.1\MaievEntityFramework.pdb
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\obj\Debug\netcoreapp3.1\MaievEntityFramework.csprojAssemblyReference.cache
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\obj\Debug\netcoreapp3.1\MaievEntityFramework.AssemblyInfoInputs.cache
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\obj\Debug\netcoreapp3.1\MaievEntityFramework.AssemblyInfo.cs
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\obj\Debug\netcoreapp3.1\MaievEntityFramework.csproj.CoreCompileInputs.cache
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\obj\Debug\netcoreapp3.1\MaievEntityFramework.dll
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\obj\Debug\netcoreapp3.1\MaievEntityFramework.pdb
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\bin\Debug\netcoreapp3.1\MaievEntityFramework.runtimeconfig.json
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\bin\Debug\netcoreapp3.1\MaievEntityFramework.runtimeconfig.dev.json
+C:\ProjetosGitHub\Maiev\MaievEntityFramework\obj\Debug\netcoreapp3.1\MaievEntityFramework.genruntimeconfig.cache
