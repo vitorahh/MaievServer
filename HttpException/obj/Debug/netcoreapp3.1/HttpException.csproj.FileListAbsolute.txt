@@ -1,9 +1,0 @@
-C:\ProjetosGitHub\Maiev\HttpException\bin\Debug\netcoreapp3.1\HttpException.deps.json
-C:\ProjetosGitHub\Maiev\HttpException\bin\Debug\netcoreapp3.1\HttpException.dll
-C:\ProjetosGitHub\Maiev\HttpException\bin\Debug\netcoreapp3.1\HttpException.pdb
-C:\ProjetosGitHub\Maiev\HttpException\obj\Debug\netcoreapp3.1\HttpException.csprojAssemblyReference.cache
-C:\ProjetosGitHub\Maiev\HttpException\obj\Debug\netcoreapp3.1\HttpException.AssemblyInfoInputs.cache
-C:\ProjetosGitHub\Maiev\HttpException\obj\Debug\netcoreapp3.1\HttpException.AssemblyInfo.cs
-C:\ProjetosGitHub\Maiev\HttpException\obj\Debug\netcoreapp3.1\HttpException.csproj.CoreCompileInputs.cache
-C:\ProjetosGitHub\Maiev\HttpException\obj\Debug\netcoreapp3.1\HttpException.dll
-C:\ProjetosGitHub\Maiev\HttpException\obj\Debug\netcoreapp3.1\HttpException.pdb
