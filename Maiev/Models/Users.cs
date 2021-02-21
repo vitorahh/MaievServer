@@ -52,7 +52,7 @@ namespace Maiev.Models
                 us.DS_USUARIO = User.DS_USUARIO;
                 us.DS_LOGIN = User.DS_LOGIN;
                 us.DS_SENHA = EncryptProvider.Sha1(User.DS_SENHA);
-                us.FL_ADMINISTRADOR = User.FL_ADMINISTRADOR;
+                us.FL_ADMINISTRADOR = false;
                 us.FL_ATIVO = true;
                 us.NR_IDADE = User.NR_IDADE;
 
@@ -66,7 +66,7 @@ namespace Maiev.Models
             }
             catch (Exception ex)
             {
-                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contrate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
+                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
 
             }
         }

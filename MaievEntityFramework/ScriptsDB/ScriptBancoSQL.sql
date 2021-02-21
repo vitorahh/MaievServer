@@ -30,5 +30,17 @@ CREATE TABLE TB_LE_LANCE (
     REFERENCES TB_LE_PRODUTO(ID_PRODUTO)
 );
 GO
---dotnet ef dbcontext scaffold "Data Source=MAIEVDATABASE;Initial Catalog=maievdatabase;persist security info=True;user id=usr_clientemais;password=usr_clientemais;MultipleActiveResultSets=True" Microsoft.EntityFrameworkCore.SqlServer -o Models/DataBaseModels --context-dir Models/Context -d --use-database-names -f
---dotnet ef dbcontext scaffold "Data Source=den1.mssql8.gear.host;Initial Catalog=maievdatabase;persist security info=True;user id=maievdatabase;password=Ab6A4i5P_nv-;MultipleActiveResultSets=True" Microsoft.EntityFrameworkCore.SqlServer -o Models/DataBaseModels --context-dir Models/Context -d --use-database-names -f
+BEGIN
+    INSERT INTO TB_LE_PRODUTO VALUES ('Onix',34.962)
+    INSERT INTO TB_LE_PRODUTO VALUES ('Cruze',12299000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('BMW i8',64995000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('BMW M4',50295000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('BMW SÉRIE 8',117595000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('BMW X5 2021',68995000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('JAGUAR XE',32395000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('KIA CERATO',9499000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('KIA STINGER',34999000)
+    INSERT INTO TB_LE_PRODUTO VALUES ('JEEP COMPASS',17290200)
+    INSERT INTO TB_LE_PRODUTO VALUES ('JEEP WRANGLER',35385500)
+END
+GO

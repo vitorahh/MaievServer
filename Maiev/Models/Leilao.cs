@@ -20,13 +20,16 @@ namespace Maiev.Models
         {
             try
             {
-                decimal LanceAtual = db.TB_LE_LANCEs.Where(x => x.ID_PRODUTO == lance.ID_PRODUTO).Max(x => x.VL_LANCE);
+                decimal LanceAtual = db.TB_LE_LANCEs.Where(x => x.ID_PRODUTO == lance.ID_PRODUTO).OrderByDescending(x=> x.VL_LANCE).Select(x => x.VL_LANCE).FirstOrDefault();
 
                 decimal vlProduto = db.TB_LE_PRODUTOs.Where(x => x.ID_PRODUTO == lance.ID_PRODUTO).Max(x => x.VL_PRODUTO);
 
-                if (LanceAtual >= lance.VL_LANCE || vlProduto >= lance.VL_LANCE)
+                if (LanceAtual >= lance.VL_LANCE)
                     throw new HttpException("Erro ao Efetuar Lance", "Não foi possivel fazer um lance neste produto pois o valor e Igual ou inferior ao maior lance atual ja feito", HttpStatusCode.BadRequest);
-                
+
+                if (vlProduto >= lance.VL_LANCE)
+                    throw new HttpException("Erro ao Efetuar Lance", "Não foi possivel fazer um lance neste produto pois o valor e Igual ou inferior ao valor do Produto", HttpStatusCode.BadRequest);
+
                 List<Claim> claim = identity.Claims.ToList();
 
                 TB_LE_LANCE LanceObject = new TB_LE_LANCE();
@@ -43,7 +46,7 @@ namespace Maiev.Models
             }
             catch (Exception ex)
             {
-                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contrate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
+                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
 
             }
         }
@@ -62,6 +65,7 @@ namespace Maiev.Models
                             ID_LANCE = lc.ID_LANCE,
                             DS_PRODUTO = pr.DS_NOME,
                             DS_USUARIO = us.DS_USUARIO,
+                            DT_LANCE = lc.DT_LANCE,
                             VL_LANCE = lc.VL_LANCE
                         }
                     ).ToList();
@@ -74,7 +78,7 @@ namespace Maiev.Models
             }
             catch (Exception ex)
             {
-                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante a listagem dos Lances. Contrate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
+                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante a listagem dos Lances. Contate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
 
             }
         }

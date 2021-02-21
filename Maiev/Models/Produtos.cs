@@ -22,13 +22,15 @@ namespace Maiev.Models
             {
                 List<ResponseProdutosDTO> lstProdutos = (
                                                 from pr in db.TB_LE_PRODUTOs
+                                                let totalLances = db.TB_LE_LANCEs.Where(X => X.ID_PRODUTO == pr.ID_PRODUTO).Count()
+                                                let Maxlance = db.TB_LE_LANCEs.Where(X => X.ID_PRODUTO == pr.ID_PRODUTO).Max(x => x.VL_LANCE)
                                                 select new ResponseProdutosDTO
                                                 {
                                                     ID_PRODUTO = pr.ID_PRODUTO,
                                                     DS_NOME = pr.DS_NOME,
                                                     VL_PRODUTO = pr.VL_PRODUTO,
-                                                    NR_LANCES = db.TB_LE_LANCEs.Where(X => X.ID_PRODUTO == pr.ID_PRODUTO).Count(),
-                                                    VL_LANCE_ATUAL = db.TB_LE_LANCEs.Where(X => X.ID_PRODUTO == pr.ID_PRODUTO).Max(x=> x.VL_LANCE)
+                                                    NR_LANCES = totalLances,
+                                                    VL_LANCE_ATUAL = (Maxlance >0 ? Maxlance : pr.VL_PRODUTO)
                                                 }
                                                 ).ToList();
 
@@ -37,7 +39,7 @@ namespace Maiev.Models
             }
             catch (Exception ex)
             {
-                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contrate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
+                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
 
             }
         }
@@ -54,7 +56,7 @@ namespace Maiev.Models
             }
             catch (Exception ex)
             {
-                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contrate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
+                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
 
             }
         }
@@ -75,7 +77,7 @@ namespace Maiev.Models
             }
             catch (Exception ex)
             {
-                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contrate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
+                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
 
             }
         }
@@ -91,7 +93,7 @@ namespace Maiev.Models
             }
             catch (Exception ex)
             {
-                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contrate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
+                throw new HttpException("Erro Interno no Sistema", string.Format("Ocorrou um erro durante o cadastro. Contate o administrador. {0}", ex.Message), HttpStatusCode.InternalServerError);
 
             }
         }

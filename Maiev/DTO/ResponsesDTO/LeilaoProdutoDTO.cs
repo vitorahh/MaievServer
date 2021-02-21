@@ -9,6 +9,8 @@ namespace Maiev.DTO.ResponsesDTO
     {
         public int ID_LANCE { get; set; }
 
+        public DateTime DT_LANCE { get; set; }
+
         public string DS_PRODUTO { get; set; }
 
         public string DS_USUARIO { get; set; }

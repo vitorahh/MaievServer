@@ -29,7 +29,5 @@ namespace Maiev.DTO
 
         public Boolean FL_ATIVO { get; set; }
 
-        [Range(typeof(bool), "false", "true", ErrorMessage = "O Flag Administrador precisa ser FALSE ou TRUE")]
-        public Boolean FL_ADMINISTRADOR { get; set; }
     }
 }
