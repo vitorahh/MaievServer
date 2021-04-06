@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosGitHub\\Maiev\\Maiev\\Maiev.csproj": {}
+    "D:\\RepositoriosGithub\\MaievServer\\Maiev\\Maiev.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj": {
+    "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj",
+        "projectUniqueName": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj",
         "projectName": "ExceptionMaiev",
-        "projectPath": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj",
+        "projectPath": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj",
         "packagesPath": "C:\\Users\\Vitorwillian\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\obj\\",
+        "outputPath": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Vitorwillian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -66,25 +68,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\ProjetosGitHub\\Maiev\\MaievEntityFramework\\MaievEntityFramework.csproj": {
+    "D:\\RepositoriosGithub\\MaievServer\\MaievEntityFramework\\MaievEntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosGitHub\\Maiev\\MaievEntityFramework\\MaievEntityFramework.csproj",
+        "projectUniqueName": "D:\\RepositoriosGithub\\MaievServer\\MaievEntityFramework\\MaievEntityFramework.csproj",
         "projectName": "MaievEntityFramework",
-        "projectPath": "C:\\ProjetosGitHub\\Maiev\\MaievEntityFramework\\MaievEntityFramework.csproj",
+        "projectPath": "D:\\RepositoriosGithub\\MaievServer\\MaievEntityFramework\\MaievEntityFramework.csproj",
         "packagesPath": "C:\\Users\\Vitorwillian\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosGitHub\\Maiev\\MaievEntityFramework\\obj\\",
+        "outputPath": "D:\\RepositoriosGithub\\MaievServer\\MaievEntityFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Vitorwillian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -152,25 +156,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\ProjetosGitHub\\Maiev\\Maiev\\Maiev.csproj": {
+    "D:\\RepositoriosGithub\\MaievServer\\Maiev\\Maiev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosGitHub\\Maiev\\Maiev\\Maiev.csproj",
+        "projectUniqueName": "D:\\RepositoriosGithub\\MaievServer\\Maiev\\Maiev.csproj",
         "projectName": "Maiev",
-        "projectPath": "C:\\ProjetosGitHub\\Maiev\\Maiev\\Maiev.csproj",
+        "projectPath": "D:\\RepositoriosGithub\\MaievServer\\Maiev\\Maiev.csproj",
         "packagesPath": "C:\\Users\\Vitorwillian\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosGitHub\\Maiev\\Maiev\\obj\\",
+        "outputPath": "D:\\RepositoriosGithub\\MaievServer\\Maiev\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Vitorwillian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -186,11 +192,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj": {
-                "projectPath": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj"
+              "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj": {
+                "projectPath": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj"
               },
-              "C:\\ProjetosGitHub\\Maiev\\MaievEntityFramework\\MaievEntityFramework.csproj": {
-                "projectPath": "C:\\ProjetosGitHub\\Maiev\\MaievEntityFramework\\MaievEntityFramework.csproj"
+              "D:\\RepositoriosGithub\\MaievServer\\MaievEntityFramework\\MaievEntityFramework.csproj": {
+                "projectPath": "D:\\RepositoriosGithub\\MaievServer\\MaievEntityFramework\\MaievEntityFramework.csproj"
               }
             }
           }
@@ -240,7 +246,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

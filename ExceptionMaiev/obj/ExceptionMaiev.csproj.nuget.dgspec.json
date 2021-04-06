@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj": {}
+    "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj": {
+    "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj",
+        "projectUniqueName": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj",
         "projectName": "ExceptionMaiev",
-        "projectPath": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj",
+        "projectPath": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj",
         "packagesPath": "C:\\Users\\Vitorwillian\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\obj\\",
+        "outputPath": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Vitorwillian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -66,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -3,6 +3,7 @@ using Maiev.DTO;
 using Maiev.DTO.ResponsesDTO;
 using Maiev.Models;
 using Maiev.Swagger;
+using MaievEntityFramework.Models.Context;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,6 +19,14 @@ namespace Maiev.Controllers
     [ApiController]
     public class LeilaoController : Controller
     {
+
+        readonly maievdatabaseContext db = null;
+
+        public LeilaoController(maievdatabaseContext _db)
+        {
+            db = _db;
+        }
+
         [ProducesResponseType(typeof(SuccessInsertResponse), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestResponseErrors), 400)]
         [ProducesResponseType(typeof(RequestResponseErrors), 401)]
@@ -29,7 +38,7 @@ namespace Maiev.Controllers
             try
             {
                 ClaimsIdentity identity = (ClaimsIdentity)HttpContext.User.Identity;
-                Leilao le = new Leilao();
+                Leilao le = new Leilao(db);
                 le.CadastrarLance(DataLance, identity);
                 return StatusCode(200, new { message = "Lance Efetuado com Sucesso" });
             }
@@ -50,7 +59,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Leilao le = new Leilao();
+                Leilao le = new Leilao(db);
                 
                 return StatusCode(200, new { lstLances = le.ListarLances(ID_PRODUTO)});
             }

@@ -15,8 +15,11 @@ namespace Maiev.Models
 {
     public class Users
     {
-        maievdatabaseContext db = new maievdatabaseContext();
-
+        readonly maievdatabaseContext db = null;
+        public Users(maievdatabaseContext _db)
+        {
+            db = _db;
+        }
         public int AuthLogin(LoginDTO UserBody)
         {
             try

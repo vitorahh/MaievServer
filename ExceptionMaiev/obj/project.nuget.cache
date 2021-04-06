@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "thDle2xyUU/XUZhEZkNOD8oIZ7u6uoPWy4rDciPsyMRmQiXaAdNsGkemLC+8eE7PNQ7S0WHjpujolwC4J8VdJQ==",
+  "dgSpecHash": "NHk9pgSoiUVlmtkFHiY9J/Pw0Fr5KaiC3uyYwxDTm+VhvXXe43uSJETXu/RNPNkPQDTOt5sSqF6zN6MGNCFkbg==",
   "success": true,
-  "projectFilePath": "C:\\ProjetosGitHub\\Maiev\\ExceptionMaiev\\ExceptionMaiev.csproj",
+  "projectFilePath": "D:\\RepositoriosGithub\\MaievServer\\ExceptionMaiev\\ExceptionMaiev.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vitorwillian\\.nuget\\packages\\netcore.encrypt\\2.0.9\\netcore.encrypt.2.0.9.nupkg.sha512",
     "C:\\Users\\Vitorwillian\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"

@@ -3,6 +3,7 @@ using Maiev.DTO;
 using Maiev.DTO.ResponsesDTO;
 using Maiev.Models;
 using Maiev.Swagger;
+using MaievEntityFramework.Models.Context;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
@@ -21,11 +22,14 @@ namespace Maiev.Controllers
     [Route("api/v1/[controller]")]
     public class AuthenticateController : Controller
     {
-
-        public AuthenticateController(IConfiguration config)
+        readonly maievdatabaseContext db = null;
+        readonly Authenticate auth = null;
+        public AuthenticateController(IConfiguration config, maievdatabaseContext _db)
         {
-            Authenticate Auth = new Authenticate(config);
+            auth = new Authenticate(config);
+            db = _db;
         }
+
 
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(BadRequestResponseErrors), 400)]
@@ -36,7 +40,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Users UserModels = new Users();
+                Users UserModels = new Users(db);
 
                 int ID_USUARIO = UserModels.AuthLogin(userInfo);
 
@@ -58,7 +62,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Users us = new Users();
+                Users us = new Users(db);
 
 
                 us.RegisterUser(User);
@@ -82,7 +86,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Users UserModels = new Users();
+                Users UserModels = new Users(db);
                 ClaimsIdentity identity = (ClaimsIdentity)HttpContext.User.Identity;
                 object User = UserModels.getuser(identity);
 

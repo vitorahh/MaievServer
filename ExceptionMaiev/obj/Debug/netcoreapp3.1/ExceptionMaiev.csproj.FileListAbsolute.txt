@@ -7,3 +7,12 @@ C:\ProjetosGitHub\Maiev\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.As
 C:\ProjetosGitHub\Maiev\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.csproj.CoreCompileInputs.cache
 C:\ProjetosGitHub\Maiev\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.dll
 C:\ProjetosGitHub\Maiev\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.pdb
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\bin\Debug\netcoreapp3.1\ExceptionMaiev.deps.json
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\bin\Debug\netcoreapp3.1\ExceptionMaiev.dll
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\bin\Debug\netcoreapp3.1\ExceptionMaiev.pdb
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.csprojAssemblyReference.cache
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.AssemblyInfoInputs.cache
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.AssemblyInfo.cs
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.csproj.CoreCompileInputs.cache
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.dll
+D:\RepositoriosGithub\MaievServer\ExceptionMaiev\obj\Debug\netcoreapp3.1\ExceptionMaiev.pdb

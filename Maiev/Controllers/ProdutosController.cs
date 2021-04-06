@@ -3,6 +3,7 @@ using Maiev.DTO;
 using Maiev.DTO.ResponsesDTO;
 using Maiev.Models;
 using Maiev.Swagger;
+using MaievEntityFramework.Models.Context;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +20,13 @@ namespace Maiev.Controllers
     {
 
 
+        readonly maievdatabaseContext db = null;
+
+        public ProdutosController(maievdatabaseContext _db)
+        {
+            db = _db;
+        }
+
         [ProducesResponseType(typeof(List<ResponseProdutosDTO>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(RequestResponseErrors), 401)]
         [ProducesResponseType(typeof(RequestResponseErrors), 500)]
@@ -28,7 +36,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Produtos pr = new Produtos();
+                Produtos pr = new Produtos(db);
                 return StatusCode(200, pr.Listar());
             }
             catch (HttpException ex)
@@ -49,7 +57,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Produtos pr = new Produtos();
+                Produtos pr = new Produtos(db);
                 pr.CadastrarProduto(Produto);
                 return StatusCode(200, new { message = "Produto Cadastrado com Sucesso" });
             }
@@ -70,7 +78,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Produtos pr = new Produtos();
+                Produtos pr = new Produtos(db);
                 pr.AtualizarProduto(Produto);
                 return StatusCode(200, new { message = "Produto Atualizado com Sucesso" });
             }
@@ -90,7 +98,7 @@ namespace Maiev.Controllers
         {
             try
             {
-                Produtos pr = new Produtos();
+                Produtos pr = new Produtos(db);
                 pr.DeletarProduto(IDProduto);
                 return StatusCode(200, new { message = "Produto Deletado com Sucesso" });
             }

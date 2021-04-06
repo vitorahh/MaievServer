@@ -14,8 +14,11 @@ namespace Maiev.Models
 {
     public class Leilao
     {
-        maievdatabaseContext db = new maievdatabaseContext();
-
+        readonly maievdatabaseContext db = null;
+        public Leilao(maievdatabaseContext _db)
+        {
+            db = _db;
+        }
         public void CadastrarLance(LanceDTO lance, ClaimsIdentity identity)
         {
             try

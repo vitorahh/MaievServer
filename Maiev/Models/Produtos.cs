@@ -14,8 +14,11 @@ namespace Maiev.Models
 {
     public class Produtos
     {
-        maievdatabaseContext db = new maievdatabaseContext();
-
+        readonly maievdatabaseContext db = null;
+        public Produtos(maievdatabaseContext _db)
+        {
+            db = _db;
+        }
         public List<ResponseProdutosDTO> Listar ()
         {
             try
